@@ -33,14 +33,11 @@ function isUserValid(username, password){
 }
 
 function signIN(username, password){
-	console.log(isUserValid(username, password));
-
-
-	// if (user === database[0].username && pass === database[1].password){
-	//	console.log(newsFeed);
-	// } else {
-	//	alert("sorry, you are not a person");
-	// }
+    if (isUserValid(username, password)){
+		console.log(newsFeed);
+	 } else {
+		alert("sorry, you are not a person");
+	 }
 }
 let userNamePrompt = prompt("What`s your username?");
 let passwordPrompt = prompt("What`s your password?");
